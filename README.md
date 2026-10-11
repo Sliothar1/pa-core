@@ -1,4 +1,4 @@
-# pa-core
+# PA Core
 
 **A small, stdlib-only toolkit for trustworthy place-based data: D4M triples, provenance, validation, privacy-safe export.**
 
@@ -7,7 +7,7 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](pyproject.toml)
 
 ## What it is
-pa-core is the shared data contract behind the PA family of heritage and science sites. Every
+PA Core is the shared data contract behind the PA family of heritage and science sites. Every
 dataset is a set of D4M-style associative arrays, stored as plain, sorted TSV triples
 (`row \t col \t val`), with:
 
@@ -21,7 +21,7 @@ dataset is a set of D4M-style associative arrays, stored as plain, sorted TSV tr
 - **No dependencies** – Python standard library only; no D4M runtime in the browser.
 
 ## Why
-Small research sites mix hand-edited claims, open data and derived numbers. pa-core keeps the
+Small research sites mix hand-edited claims, open data and derived numbers. PA Core keeps the
 editable source per site, but makes the interchange format shared, checkable and reversible:
 migrations are proven by byte-for-byte parity, not by eye.
 
@@ -42,9 +42,9 @@ The full specification is in [docs/SCHEMA.md](docs/SCHEMA.md); changes are in [C
 
 ## Sites using it
 - **PA Uí Mhaine** – the medieval kingdom of Uí Mhaine: a claims ledger with pinned annal
-  references (pa-core v0.2.0; was v0.1.0).
+  references (PA Core v0.2.0; was v0.1.0).
 - **PA Réalt** – Ireland's Neolithic and Bronze Age monuments and the sky: 6,878 monuments, with
-  preregistered tests reproduced byte for byte after migration (pa-core v0.2.0).
+  preregistered tests reproduced byte for byte after migration (PA Core v0.2.0).
 
 Sites vendor a tagged release at `vendor/pa-core`, never `main`. The site → pinned version
 matrix and the checksums of the vendored files are in [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
