@@ -35,7 +35,7 @@ pa-d4m ingest tabular --config data/d4m/tabular.json --schema data/d4m/schema.js
 pa-d4m validate data/d4m --schema data/d4m/schema.json --roundtrip data/d4m/tabular.json
 pa-d4m export data/d4m --schema data/d4m/schema.json --allow data/d4m/export.allow.json --to site/data
 pa-d4m diff git:origin/main data/d4m --max-drop 10
-pa-d4m inspect mon:ME019-070 data/d4m --schema data/d4m/schema.json
+pa-d4m inspect mon:ME001-005---- data/d4m --schema data/d4m/schema.json
 ```
 Adapters: `json-claims` (hand-edited JSON ledgers) and `tabular` (CSV/TSV tables).
 The full specification is in [docs/SCHEMA.md](docs/SCHEMA.md); changes are in [CHANGELOG.md](CHANGELOG.md).
