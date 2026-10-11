@@ -38,7 +38,7 @@ pa-d4m diff git:origin/main data/d4m --max-drop 10
 pa-d4m inspect mon:ME001-005---- data/d4m --schema data/d4m/schema.json
 ```
 Adapters: `json-claims` (hand-edited JSON ledgers) and `tabular` (CSV/TSV tables).
-The full specification is in [docs/SCHEMA.md](docs/SCHEMA.md); changes are in [CHANGELOG.md](CHANGELOG.md).
+The full specification is in [docs/SCHEMA.md](docs/SCHEMA.md); changes are in [CHANGELOG.md](CHANGELOG.md). Stable contract and release gates: [docs/CONTRACT.md](docs/CONTRACT.md); edges: [docs/EDGES.md](docs/EDGES.md); parity gate: [docs/PARITY-GATE.md](docs/PARITY-GATE.md).
 
 ## Sites using it
 - **PA Uí Mhaine** – the medieval kingdom of Uí Mhaine: a claims ledger with pinned annal
