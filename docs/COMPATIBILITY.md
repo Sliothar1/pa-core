@@ -2,7 +2,7 @@
 
 Sites vendor a tagged release at `vendor/pa-core` (`git archive <tag>`), never `main`.
 
-| Site (repo) | Pinned pa-core | Since | Parity record |
+| Site (repo) | Pinned pa-core (code) | Since | Parity record |
 |---|---|---|---|
 | PA Uí Mhaine (Sliothar1/pa-ui-mhaine) | v0.2.0 | 11 Oct 2026 (was v0.1.0) | `docs/PARITY.md` in that repo: 36/36 published files byte-identical, draft and live |
 | PA Réalt (Sliothar1/pa-realt) | v0.2.0 | 11 Oct 2026 | `prereg/addendum-2026-10-12.md` in that repo |
@@ -12,7 +12,7 @@ row (core column, unreleased on main after v0.2.0); validation fails if it diffe
 version the installed pa-core reads.
 
 ## sha256 of the vendored v0.2.0 tree (as committed in PA Uí Mhaine `vendor/pa-core`)
-LICENSE and NOTICE come from pa-core main 060104f; VENDORED.md is written by the site. All other
+LICENSE (Apache-2.0) and NOTICE come from tag v0.2.1 (licence-only release); VENDORED.md is written by the site. All other
 files are byte-identical to `git archive v0.2.0`. Check with
 `cd vendor/pa-core && sha256sum -c` on the list below (paths relative to `vendor/pa-core`).
 
@@ -20,10 +20,10 @@ files are byte-identical to `git archive v0.2.0`. Check with
 769ab350ef12e9d2f9939cc2dd3f92b6efc61c9930d90987a2116a65a902edff  .github/workflows/ci.yml
 1919c7b88369e147fa2a3fd5c0c667746a1a7834939a95f8574c4c9fb32f1bac  .gitignore
 2164a366c1c9b35d617a4e9fb741192fcb004fe2fd416ffe14765130c606fe54  CHANGELOG.md
-0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0  LICENSE
-d081b23e14fc81e03a44f314999b871863e7cf18494e4babc98decc1924242be  NOTICE
+cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  LICENSE
+eb3d7ba5ddb505f8d96f0effad0aa939acd076f3d6a2ab409c0cd73cf0f05d5d  NOTICE
 c2e9272434c46e752514efa581355429783c18c063a6cb2d8e495afdd34c1b8e  README.md
-1b9fe01198788c0df61e6765595d77a1d23098f1aa43217a14c27430de22b844  VENDORED.md
+531526bb8743d2a4a8accc4afe0ed3f6aa1adc579fb8407280f8d4440f9daa11  VENDORED.md
 dff08dd23a858649226b0314dc4888b11e105a6c7f69c3f0955189fb7de2d81c  docs/SCHEMA.md
 cf75a1401079f70b3a20f58c1b41f07dfff72943557fc83ac8e72b2e0e594e99  pa_core/__init__.py
 b29b18dcdff7a1dc3835030d29e8eb69b6ccb6f0aa2ac7e9c72fd79d51e7a608  pa_core/adapters/__init__.py
@@ -56,3 +56,5 @@ a318e8b111b246c1a4d1fec5043c125ae974276a2876d48795de5e200712a1db  tests/fixtures
 58c070017b923450dfd1b3b49f7f0499094279fade94d3cd269a3aed596021d7  tests/fixtures/table/schema.json
 10513e7ba8fd1c7f1a78be9f8cdcd445f7d94c2d601d69fb51951247df80b16b  tests/test_core.py
 ```
+
+v0.2.1 differs from v0.2.0 only in LICENSE, NOTICE, README, pyproject licence/version and `__version__`; sites pinned to v0.2.0 code carry the v0.2.1 LICENSE/NOTICE.

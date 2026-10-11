@@ -3,7 +3,7 @@
 **A small, stdlib-only toolkit for trustworthy place-based data: D4M triples, provenance, validation, privacy-safe export.**
 
 [![tests](https://github.com/Sliothar1/pa-core/actions/workflows/ci.yml/badge.svg)](https://github.com/Sliothar1/pa-core/actions/workflows/ci.yml)
-[![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](pyproject.toml)
 
 ## What it is
@@ -55,15 +55,8 @@ allow-listed columns, ever leave. Fields such as consent, age band, date of birt
 phone are hard-blocked even if a site allow-lists them, and the test suite includes negative
 tests on a sensitive fixture.
 
-## For contributors: the toolkit licence and your data
-pa-core is AGPL-3.0. Using pa-core to build, validate or export a site does not, by itself, make
-that site's published data AGPL: the data (claims, places, monuments, text) is separate from the
-toolkit and keeps whatever licence its own sources and authors give it (for example CC BY 4.0 for
-logainm.ie or National Monuments Service records). The AGPL covers pa-core's code and modified
-versions of it. This is a plain-language note, not legal advice.
-
 ## Licence
-[GNU Affero General Public License v3.0](LICENSE). Copyright © 2026 Dr Garry Lohan.
+[Apache License, Version 2.0](LICENSE). See [NOTICE](NOTICE). Copyright © 2026 Dr Garry Lohan.
 
 ---
 
