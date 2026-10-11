@@ -7,6 +7,8 @@ Sites vendor a tagged release at `vendor/pa-core` (`git archive <tag>`), never `
 | PA Uí Mhaine (Sliothar1/pa-ui-mhaine) | v0.2.0 | 11 Oct 2026 (was v0.1.0) | `docs/PARITY.md` in that repo: 36/36 published files byte-identical, draft and live |
 | PA Réalt (Sliothar1/pa-realt) | v0.2.0 | 11 Oct 2026 | `prereg/addendum-2026-10-12.md` in that repo |
 
+pa-core v0.3.0 (contract docs, edges, parity) is released; no site pins it yet.
+
 Schema version: 1 in every release so far. Datasets may carry a `meta|schema_version` column on a
 row (core column, unreleased on main after v0.2.0); validation fails if it differs from the
 version the installed pa-core reads.
