@@ -28,7 +28,7 @@ migrations are proven by byte-for-byte parity, not by eye.
 ## Quick start
 ```bash
 git clone https://github.com/Sliothar1/pa-core && cd pa-core
-python3 -m unittest discover -s tests          # 37 tests, stdlib only
+python3 -m unittest discover -s tests          # 42 tests, stdlib only
 pip install .                                  # installs the pa-d4m command (or run python3 pa_d4m.py)
 
 pa-d4m ingest tabular --config data/d4m/tabular.json --schema data/d4m/schema.json --out data/d4m
@@ -42,17 +42,25 @@ The full specification is in [docs/SCHEMA.md](docs/SCHEMA.md); changes are in [C
 
 ## Sites using it
 - **PA Uí Mhaine** – the medieval kingdom of Uí Mhaine: a claims ledger with pinned annal
-  references (pa-core v0.1.0).
+  references (pa-core v0.2.0; was v0.1.0).
 - **PA Réalt** – Ireland's Neolithic and Bronze Age monuments and the sky: 6,878 monuments, with
   preregistered tests reproduced byte for byte after migration (pa-core v0.2.0).
 
-Sites vendor a tagged release at `vendor/pa-core`, never `main`.
+Sites vendor a tagged release at `vendor/pa-core`, never `main`. The site → pinned version
+matrix and the checksums of the vendored files are in [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 
 ## Privacy by default
 Export is **default-deny**: only rows marked `visibility|public`, of allow-listed types, with
 allow-listed columns, ever leave. Fields such as consent, age band, date of birth, email and
 phone are hard-blocked even if a site allow-lists them, and the test suite includes negative
 tests on a sensitive fixture.
+
+## For contributors: the toolkit licence and your data
+pa-core is AGPL-3.0. Using pa-core to build, validate or export a site does not, by itself, make
+that site's published data AGPL: the data (claims, places, monuments, text) is separate from the
+toolkit and keeps whatever licence its own sources and authors give it (for example CC BY 4.0 for
+logainm.ie or National Monuments Service records). The AGPL covers pa-core's code and modified
+versions of it. This is a plain-language note, not legal advice.
 
 ## Licence
 [GNU Affero General Public License v3.0](LICENSE). Copyright © 2026 Dr Garry Lohan.

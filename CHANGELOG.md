@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+- Core column `meta|schema_version` (int); validation fails if a row carries a value other than
+  the schema version this pa-core reads.
+- Tests: JSON → TSV → JSON round trip, and a mutation suite (id, number, provenance-only field;
+  the provenance-only change must leave the outputs unchanged). 42 tests.
+- Docs: docs/COMPATIBILITY.md (site → pinned version, vendored-file checksums); README note that
+  using the toolkit does not make a site's data AGPL (not legal advice).
+
 ## v0.2.0 (2026-10-11)
 - New `tabular` adapter (CSV/TSV with header; per-id-prefix source templates; optional JSON metadata
   document; byte-exact round-trip check). First consumer: PA Réalt.
