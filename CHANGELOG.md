@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.1 (2026-10-11)
+- Licence only: relicensed from AGPL-3.0 to Apache-2.0 by the sole copyright holder, Dr Garry Lohan.
+  LICENSE is the unmodified Apache-2.0 text; NOTICE, README and pyproject updated. No code or data-contract change.
+
 ## v0.2.0 (2026-10-11)
 - New `tabular` adapter (CSV/TSV with header; per-id-prefix source templates; optional JSON metadata
   document; byte-exact round-trip check). First consumer: PA Réalt.
