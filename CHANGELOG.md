@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+- Core column `meta|schema_version` (int); validation fails if a row carries a value other than
+  the schema version this pa-core reads.
+- Tests: JSON → TSV → JSON round trip, and a mutation suite (id, number, provenance-only field;
+  the provenance-only change must leave the outputs unchanged). 42 tests.
+- Docs: docs/COMPATIBILITY.md (site → pinned version, vendored-file checksums).
+
 ## v0.2.1 (2026-10-11)
 - Licence only: relicensed from AGPL-3.0 to Apache-2.0 by the sole copyright holder, Dr Garry Lohan.
   LICENSE is the unmodified Apache-2.0 text; NOTICE, README and pyproject updated. No code or data-contract change.

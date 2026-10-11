@@ -28,7 +28,7 @@ migrations are proven by byte-for-byte parity, not by eye.
 ## Quick start
 ```bash
 git clone https://github.com/Sliothar1/pa-core && cd pa-core
-python3 -m unittest discover -s tests          # 37 tests, stdlib only
+python3 -m unittest discover -s tests          # 42 tests, stdlib only
 pip install .                                  # installs the pa-d4m command (or run python3 pa_d4m.py)
 
 pa-d4m ingest tabular --config data/d4m/tabular.json --schema data/d4m/schema.json --out data/d4m
@@ -42,11 +42,12 @@ The full specification is in [docs/SCHEMA.md](docs/SCHEMA.md); changes are in [C
 
 ## Sites using it
 - **PA Uí Mhaine** – the medieval kingdom of Uí Mhaine: a claims ledger with pinned annal
-  references (pa-core v0.1.0).
+  references (pa-core v0.2.0; was v0.1.0).
 - **PA Réalt** – Ireland's Neolithic and Bronze Age monuments and the sky: 6,878 monuments, with
   preregistered tests reproduced byte for byte after migration (pa-core v0.2.0).
 
-Sites vendor a tagged release at `vendor/pa-core`, never `main`.
+Sites vendor a tagged release at `vendor/pa-core`, never `main`. The site → pinned version
+matrix and the checksums of the vendored files are in [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 
 ## Privacy by default
 Export is **default-deny**: only rows marked `visibility|public`, of allow-listed types, with
